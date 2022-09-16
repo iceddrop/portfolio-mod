@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.home{
+  padding-top:100px;
+  width:100%;
+}
+.header-1{
+  font-weight:bold;
+  letter-spacing:1px;
+}
+.img-1{
+  width:330px;
+  height:330px;
+  object-fit:contain;
+}
