@@ -10,6 +10,7 @@ function App() {
           <>
             <Navbar/>
             <Home timeline={tl} ease={ease}/>
+            <About/>
           </>
   )
 }
