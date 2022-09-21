@@ -17,7 +17,7 @@ export default function Navbar(){
     window.addEventListener("scroll", changeBackground)
   })
     return(
-        <nav className={navbar ? 'navbar navbar-expand-lg navbar-light bg-light md:px-4 lg:px-10 xl:px-16 fixed-top': 'navbar navbar-expand-lg navbar-light md:px-4 lg:px-10 xl:px-16 fixed-top' }>
+        <nav className='navbar navbar-expand-lg navbar-light bg-light md:px-4 lg:px-10 xl:px-16 fixed-top'>
         <div class="container-fluid">
           <a href='#'><img src={logo} class="navbar-brand w-14"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

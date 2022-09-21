@@ -38,7 +38,9 @@
   margin-right: auto;
 }
 @media only screen and (min-width:319px) and (max-width:468px){
-
+  .home{
+    height:100vh!important;
+  }
   .image-2{
     margin-top:40px;
   }
