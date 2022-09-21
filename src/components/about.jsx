@@ -13,10 +13,8 @@ export default function About(){
    React.useEffect(() =>{
      const headerEl = header.current;
      const paragraphEl = paragraph.current;
-     gsap.fromTo(headerEl,{y:100,opacity:0}, {y:0,opacity: 1, scrollTrigger:{
-        trigger: headerEl
-
-     }}),
+     gsap.to(headerEl,{ scrollTrigger: '.title-2', y:-100, opacity:1,
+     }),
      gsap.fromTo(paragraphEl,{x:100,opacity:0}, {x:0,opacity: 1,delay:1.2, scrollTrigger:{
         trigger: paragraphEl
 
