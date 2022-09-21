@@ -1,20 +1,25 @@
 import React from 'react'
 import image from '../assets/IMG_1994.jpeg'
 import gsap from 'gsap'
-import{Power3} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+
 export default function About(){
+   gsap.registerPlugin(ScrollTrigger)
+
    const header = React.useRef(null)
+
    const paragraph = React.useRef(null)
+
    React.useEffect(() =>{
      const headerEl = header.current;
      const paragraphEl = paragraph.current;
-     gsap.fromTo(headerEl,{opacity:0}, {y:-100,opacity: 1, scrollTrigger:{
+     gsap.fromTo(headerEl,{y:100,opacity:0}, {y:0,opacity: 1, scrollTrigger:{
         trigger: headerEl
+
      }}),
-     gsap.fromTo(paragraphEl,{opacity:0}, {x:-100,opacity: 1,delay:1.2, scrollTrigger:{
+     gsap.fromTo(paragraphEl,{x:100,opacity:0}, {x:0,opacity: 1,delay:1.2, scrollTrigger:{
         trigger: paragraphEl
+
      }}) 
    },[])
     return(
