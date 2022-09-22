@@ -1,21 +1,7 @@
 import React from 'react'
 import logo from '../assets/favpng_web-development-software-development-programmer-computer-programming-custom-software-removebg.png'
 export default function Navbar(){
-   const [navbar, setNavbar] = React.useState(false)
-   const changeBackground = () => {
-    console.log(window.scrollY)
-    if (window.scrollY >= 66) {
-      setNavbar(true)
-    } else {
-      setNavbar(false)
-    }
-  } 
 
-  React.useEffect(() => {
-    changeBackground()
-
-    window.addEventListener("scroll", changeBackground)
-  })
     return(
         <nav className='navbar navbar-expand-lg navbar-light bg-light md:px-4 lg:px-10 xl:px-16 fixed-top'>
         <div class="container-fluid">
