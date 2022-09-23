@@ -19,15 +19,21 @@ export default function About(){
      const imageEl = myImage.current;
      gsap.fromTo(headerEl,{y:-100,opacity:0},{ y:0, opacity:1,delay:0.7,
       scrollTrigger: {
-         trigger:'.title-2'
+         trigger:'.title-2',
+         markers:true,
+         toggleActions: 'play none none reverse'
    }}),
      gsap.fromTo(paragraphEl,{y:100,opacity:0},{ y:0, delay:0.7, opacity:1,
       scrollTrigger: {
-         trigger:'.paragraph-2'
+         trigger:'.paragraph-2',
+         markers:true,
+         toggleActions: 'play none none reverse'
    }}),
-   gsap.fromTo(imageEl,{y:100,opacity:0},{ y:0, delay:1.5, opacity:1,
+   gsap.fromTo(imageEl,{y:100,opacity:0},{ y:0, opacity:1,
       scrollTrigger: {
-         trigger:'.image-2'
+         trigger:'.image-2',
+         markers:true,
+         toggleActions: 'play none none reverse'
    }})
    },[])
     return(
