@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Metal+Mania&family=Russo+One&family=Space+Mono:wght@700&display=swap');
 body, html{
   margin: 0;
   padding: 0;
@@ -69,6 +70,79 @@ body, html{
   font-size:65px;
   color: hsl(207,64%,48%);
 }
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.project-title-1{
+  font-family:Metal Mania;
+}
+.project-title-2{
+  font-family: Space Mono;
+  color:hsl(193, 38%, 86%);
+}
+.swiper-slide:nth-child(1n) {
+  background:rgba(1, 0, 41, 1);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-image: linear-gradient(to bottom, black 0%, #29323c 100%);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: hsl(218, 23%, 16%);
+}
+
+.swiper-slide:nth-child(4n) {
+  background: #008000!important;
+  color:black;
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: hsl(207,64%,48%);
+  color:hsl(207,64%,48%);
+}
+
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #fff;
+}
+.btn-div a:hover{
+  color:white;
+}
+.btn-div a:focus{
+  color:white;
+}
+.project-title-3{
+  font-family:Russo One;
+  transform: rotate(15deg);
+  color:hsl(130, 91%, 78%);
+}
+.demo-btn-2{
+
+    border-color:hsl(130, 91%, 78%);
+  
+}
+.code-btn-2{
+  background:hsl(130, 91%, 78%);
+  letter-spacing:1px;
+}
+.project-title-4{
+  font-family:Blaka hollow;
+
+}
+.demo-btn-4:hover{
+  color:black!important;
+}
+.code-btn-5:hover{
+  color:hsl(207,64%,48%)!important;
+}
 @-webkit-keyframes bounce {
   from {
       -webkit-transform: translate3d(0, 0, 0);
@@ -83,6 +157,11 @@ body, html{
   .image-2{
     margin-top:40px;
   }
+  .code-btn{
+    position:relative;
+    top:10px;
+    padding:10px;
+  }
 }
 @media only screen and (min-width:469px) and (max-width:768px){
   .about-section{
@@ -92,7 +171,17 @@ body, html{
   .image-2{
     height:300px!important;
   }
-  
+  .swiper{
+    width:340px;
+  }
+  .demo-btn{
+    position:relative!important;
+    right:5px!important;
+  }
+  .code-btn{
+    position:relative!important;
+    left:5px!important;
+  }
 }
 @media only screen and (min-width:769px) and (max-width:1024px){
   .about-section{
@@ -102,7 +191,17 @@ body, html{
   .image-2{
     height:300px!important;
   }
-
+  .swiper{
+    width:540px;
+  }
+  .demo-btn{
+    position:relative!important;
+    right:5px!important;
+  }
+  .code-btn{
+    position:relative!important;
+    left:5px!important;
+  }
 }
 @media only screen and (min-width:1200px) and (max-width:1500px){
   .about-section{
@@ -114,6 +213,17 @@ body, html{
   }
   .skillset-div{
     width:450px;
+  }
+  .swiper{
+    width:540px;
+  }
+  .demo-btn{
+    position:relative!important;
+    right:5px!important;
+  }
+  .code-btn{
+    position:relative!important;
+    left:5px!important;
   }
 }
 @media only screen and (min-width:1600px) and (max-width:3000px){
@@ -128,5 +238,16 @@ body, html{
   }
   .skillset-div{
     width:450px;
+  }
+  .swiper{
+    width:540px;
+  }
+  .demo-btn{
+    position:relative!important;
+    right:5px!important;
+  }
+  .code-btn{
+    position:relative!important;
+    left:5px!important;
   }
 }
