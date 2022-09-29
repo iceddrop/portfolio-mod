@@ -14,9 +14,8 @@ import { EffectCards } from "swiper";
 
 export default function Projects(){
     return(
-        <section className='pb-20 px-10'>
+        <section className='pb-20 '>
           <h3  className='text-center project-title font-blinker text-4xl  font-bold'>My Projects</h3>
-         
            <Swiper
         effect={"cards"}
         grabCursor={true}
