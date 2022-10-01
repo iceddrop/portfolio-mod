@@ -13,6 +13,7 @@ import appy from '../assets/download(2).webp'
 import { EffectCards } from "swiper";
 
 export default function Projects(){
+
     return(
         <section className='pb-20 '>
           <h3  className='text-center project-title font-blinker text-4xl  font-bold'>My Projects</h3>
@@ -25,7 +26,7 @@ export default function Projects(){
         <SwiperSlide className='text-center'>
             <h3 className="project-title-1 text-4xl text-green-600">Hexagon</h3>
             <div className='mt-4 flex flex-col md:flex-row btn-div'>
-                <a className='border-3 border-green-600 pl-4 pr-4 py-2 rounded-lg font-poppins demo-btn ' href='https://hexagon-ebon.vercel.app'>Live demo</a>
+                <a  className='border-3 border-green-600 pl-4 pr-4 py-2 rounded-lg font-poppins demo-btn ' href='https://hexagon-ebon.vercel.app'>Live demo</a>
                 <a href='https://github.com/iceddrop/Hexagon' className='bg-green-600 pl-4 pr-4 pt-2.5 font-poppins  rounded-lg code-btn'>Source code</a>
             </div>
         </SwiperSlide>
