@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Metal+Mania&family=Russo+One&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Metal+Mania&family=Russo+One&family=Space+Mono:wght@700&family=Play&display=swap');
 
 * {
   margin: 0;
@@ -69,7 +69,7 @@
   color: hsl(207,64%,48%);
 }
 .swiper {
-  width: 240px;
+  width: 230px;
   height: 320px;
 }
 
@@ -155,19 +155,28 @@
   }
 }
 .footer{
- 
-  height:400px;
+  height:700px;
   background-color: #0beef9;
   background-image: linear-gradient(315deg,#36D1DC 0%, #5B86E5 74%);
 }
 .footer-div-1{
   position: relative;
   bottom:80px;
-  width:300px;
+  width:330px;
+  height:350px;
   background-color:hsl(230, 69%, 10%);
   border-radius: 10px;
   color:white;
   padding:70px 50px 120px 50px;
+}
+.footer-h3{
+  font-family: Play;
+}
+.footer-p{
+  font-family: Play;
+}
+.footer-p2{
+  font-family:Play;
 }
 @media only screen and (min-width:319px) and (max-width:468px){
   .image-2{
@@ -199,6 +208,9 @@
     position:relative!important;
     left:5px!important;
   }
+  .footer-div-1{
+    width:700px!important;
+  }
 }
 @media only screen and (min-width:769px) and (max-width:1024px){
   .about-section{
@@ -218,6 +230,14 @@
   .code-btn{
     position:relative!important;
     left:5px!important;
+  }
+  .footer-div-1{
+    width:900px!important;
+    height: 200px;
+  }
+  .footer-p{
+    position:relative;
+    bottom:50px; 
   }
 }
 @media only screen and (min-width:1200px) and (max-width:1500px){
@@ -241,6 +261,16 @@
   .code-btn{
     position:relative!important;
     left:5px!important;
+  }
+  .footer-div-1{
+    width:1200px!important;
+    height: 210px;
+    padding-left:120px;
+    padding-right:120px;
+  }
+  .footer-p{
+    position:relative;
+    bottom:50px; 
   }
 }
 
@@ -267,5 +297,15 @@
   .code-btn{
     position:relative!important;
     left:5px!important;
+  }
+  .footer-div-1{
+    width:1200px!important;
+    height: 210px;
+    padding-left:120px;
+    padding-right:120px;
+  }
+  .footer-p{
+    position:relative;
+    bottom:50px; 
   }
 }

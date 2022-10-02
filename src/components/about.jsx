@@ -1,6 +1,7 @@
 import React from 'react'
 import image from '../assets/IMG_1994.jpeg'
 import animated from '../assets/kindpng_3767359-removebg-preview.png'
+import programmer from '../assets/programmer.png'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {FaLaptopCode} from 'react-icons/fa'
@@ -154,7 +155,7 @@ export default function About(){
         </section>
         <img src={animated} className='image-3 lg:block' alt='animated-bot'/> 
          <div className='skillset-div font-poppins text-center ml-auto mr-auto rounded-md shadow flex flex-col items-center p-12 bg-white'>
-            <FaLaptopCode  className='laptop-icon'/>
+            <img src={programmer} className='w-20'/>
             <h3 ref={skillheader} className='skillheader p-3 font-blinker font-bold text-2xl'>Front-end Developer</h3>
             <p ref={skillparagraph} className='skillparagraph tracking-wide pb-2'>I love coding things from scratch, bringing ideas to life, into the virtual space.</p>
             <h5 ref={languages} className='languages-head font-bold text-blue-500 p-2'>Languages I work with:</h5>
@@ -170,7 +171,7 @@ export default function About(){
                <li ref={bootstrap} className='bootstrap'>Bootstrap</li>
                <li ref={git} className='git'>Git and Github</li>
             </ul>
-            <a ref={resume} href='#' className='resume btn border-2 border-blue-400 border-solid rounded-full text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-white mt-4'>Resume</a>
+            <a ref={resume} href='#' className='resume btn border-2 border-blue-400 border-solid rounded-full text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-white mt-3 pb-2'>Resume</a>
          </div>
         </>   
     )
