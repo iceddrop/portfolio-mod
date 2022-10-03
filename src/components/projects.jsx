@@ -12,10 +12,10 @@ import appy from '../assets/download(2).webp'
 // import required modules
 import { EffectCards } from "swiper";
 
-export default function Projects(){
+export default function Projects(props){
 
     return(
-        <section className='pb-20 '>
+        <section id={props.id.projects} className='pb-20 '>
           <h3  className='text-center project-title font-blinker text-4xl  font-bold'>My Projects</h3>
            <Swiper
         effect={"cards"}

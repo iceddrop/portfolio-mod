@@ -8,13 +8,21 @@ import {gsap,Power3} from 'gsap'
 function App() {
   let tl = new gsap.timeline();
   let  ease = Power3.easeOut();
+
+  const id = {
+    navbar: 'navbar',
+    home : 'home',
+    about : 'about',
+    projects : 'projects',
+    contact : 'contact'
+  }
     return (
           <>
-            <Navbar/>
-            <Home timeline={tl} ease={ease}/>
-            <About/>
-            <Projects/>
-            <Footer/>
+            <Navbar id={id}/>
+            <Home timeline={tl} ease={ease} id={id}/>
+            <About id={id}/>
+            <Projects id={id}/>
+            <Footer id={id}/>
           </>
   )
 }

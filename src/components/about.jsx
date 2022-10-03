@@ -5,7 +5,7 @@ import programmer from '../assets/programmer.png'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {FaLaptopCode} from 'react-icons/fa'
-export default function About(){
+export default function About(props){
    gsap.registerPlugin(ScrollTrigger)
 
    const header = React.useRef(null)
@@ -146,7 +146,7 @@ export default function About(){
    },[])
     return(
       <>
-        <section className='flex flex-col md:flex-row-reverse px-4 py-20  about-section text-white'>
+        <section id={props.id.about} className='flex flex-col md:flex-row-reverse px-4 py-20  about-section text-white'>
           <div  className='text-center md:px-4 about-div'>
              <h3  className='title-2 font-blinker text-2xl md:text-4xl font-bold' ref={header}>Hi I'm Tomiwa, Nice to meet you.</h3>
              <p className='paragraph-2 font-poppins tracking-wide md:text-lg mt-4  md:text-start md:px-6 lg:px-10 xl:px-20' ref={paragraph}>I have invested my time and energy into mastering this skill, and I'm still hungry and in search for more. I'm very passionate and I take my job seriously, I have the technical know how to bring your ideas into reality.</p>
