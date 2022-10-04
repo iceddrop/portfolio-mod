@@ -38,6 +38,7 @@ export default function About(props){
    
    const resume = React.useRef(null)
 
+   const programer = React.useRef(null)
    React.useEffect(() =>{
      const headerEl = header.current;
 
@@ -68,6 +69,8 @@ export default function About(props){
      const gitEl = git.current
 
      const resumeEl = resume.current
+
+     const programmerEl = programer.current
      gsap.fromTo(headerEl,{y:-100,opacity:0},{ y:0, opacity:1,delay:0.7,
       scrollTrigger: {
          trigger:'.title-2',
@@ -142,6 +145,11 @@ export default function About(props){
       scrollTrigger: {
          trigger:'.resume',
          toggleActions: 'play none none reverse'
+   }}),
+   gsap.fromTo(programmerEl,{y:100,opacity:0},{ y:0, delay:0.7, opacity:1,
+      scrollTrigger: {
+         trigger:'.programmer',
+         toggleActions: 'play none none reverse'
    }})
    },[])
     return(
@@ -155,7 +163,7 @@ export default function About(props){
         </section>
         <img src={animated} className='image-3 lg:block' alt='animated-bot'/> 
          <div className='skillset-div font-poppins text-center ml-auto mr-auto rounded-md shadow flex flex-col items-center p-12 bg-white'>
-            <img src={programmer} className='w-20'/>
+            <img ref={programer} src={programmer} className='programmer w-20'/>
             <h3 ref={skillheader} className='skillheader p-3 font-blinker font-bold text-2xl'>Front-end Developer</h3>
             <p ref={skillparagraph} className='skillparagraph tracking-wide pb-2'>I love coding things from scratch, bringing ideas to life, into the virtual space.</p>
             <h5 ref={languages} className='languages-head font-bold text-blue-500 p-2'>Languages I work with:</h5>
