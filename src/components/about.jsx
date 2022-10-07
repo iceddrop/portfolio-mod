@@ -179,7 +179,7 @@ export default function About(props){
                <li ref={bootstrap} className='bootstrap'>Bootstrap</li>
                <li ref={git} className='git'>Git and Github</li>
             </ul>
-            <a ref={resume} href='#' className='resume btn border-2 border-blue-400 border-solid rounded-full text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-white mt-3 pb-2'>Resume</a>
+            <a ref={resume} href='https://resume.io/r/pPwWqs8xo' className='resume btn border-2 border-blue-400 border-solid rounded-full text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-white mt-3 pb-2'>Resume</a>
          </div>
         </>   
     )
