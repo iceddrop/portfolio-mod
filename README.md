@@ -12,7 +12,7 @@ Re-developed my portfolio from scratch using Tailwind, Bootstrap and  React .  I
       
   - I used [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) for the navbar.
   - I used [Greensock](https://greensock.com/docs/) to implement scroll-trigger.
-  - I usded [Swiper](https://swiperjs.com/get-started) to render my projects in slides.
+  - I used [Swiper](https://swiperjs.com/get-started) to render my projects in slides.
  
  ## Contributing
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
