@@ -119,16 +119,15 @@
 }
 .project-title-3{
   font-family:Russo One;
-  transform: rotate(15deg);
-  color:hsl(130, 91%, 78%);
+  color:#485964;
 }
 .demo-btn-2{
 
-    border-color:hsl(130, 91%, 78%);
+    border-color:#485964;
   
 }
 .code-btn-2{
-  background:hsl(130, 91%, 78%);
+  background:#485964;
   letter-spacing:1px;
 }
 .code-btn-2:hover{
