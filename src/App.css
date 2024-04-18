@@ -186,7 +186,9 @@
     top:10px;
     padding:10px;
   }
-
+  .skillset-div{
+    height:635px
+  }
 }
 @media only screen and (min-width:469px) and (max-width:768px){
   .about-section{

@@ -4,44 +4,45 @@ import animated from "../assets/kindpng_3767359-removebg-preview.png";
 import programmer from "../assets/programmer.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaLaptopCode } from "react-icons/fa";
+import {useRef, useEffect} from 'react';
 export default function About(props) {
   gsap.registerPlugin(ScrollTrigger);
 
-  const header = React.useRef(null);
+  const header = useRef(null);
 
-  const paragraph = React.useRef(null);
+  const paragraph = useRef(null);
 
-  const myImage = React.useRef(null);
+  const myImage = useRef(null);
 
-  const skillheader = React.useRef(null);
+  const skillheader = useRef(null);
 
-  const skillparagraph = React.useRef(null);
+  const skillparagraph = useRef(null);
 
-  const languages = React.useRef(null);
+  const languages = useRef(null);
 
-  const html = React.useRef(null);
+  const html = useRef(null);
 
-  const css = React.useRef(null);
+  const css = useRef(null);
 
-  const javascript = React.useRef(null);
+  const javascript = useRef(null);
 
-  const reac = React.useRef(null);
+  const reac = useRef(null);
 
-  const redux = React.useRef(null);
+  const redux = useRef(null);
 
-  const library = React.useRef(null);
+  const library = useRef(null);
 
-  const tailwind = React.useRef(null);
+  const tailwind = useRef(null);
 
-  const bootstrap = React.useRef(null);
+  const bootstrap = useRef(null);
 
-  const git = React.useRef(null);
+  const git = useRef(null);
 
-  const resume = React.useRef(null);
+  const resume = useRef(null);
 
-  const programer = React.useRef(null);
-  React.useEffect(() => {
+  const programer = useRef(null);
+
+  useEffect(() => {
     const headerEl = header.current;
 
     const paragraphEl = paragraph.current;
@@ -88,7 +89,6 @@ export default function About(props) {
         scrollTrigger: {
           trigger: ".title-2",
           toggleActions: "play none none reverse",
-          markers: true,
         },
       }
     ),
@@ -300,6 +300,7 @@ export default function About(props) {
         }
       );
   }, []);
+
   return (
     <>
       <section
@@ -377,7 +378,7 @@ export default function About(props) {
         </ul>
         <a
           ref={resume}
-          href="Ibikunle Oluwatomiwa Faith.docx"
+          href="https://docs.google.com/document/d/1VbMiOwdFPDneCJ-ifykEBvzSfUK469kKcl4F0CxPsOU/edit"
           className="resume btn border-2 border-blue-400 border-solid rounded-full text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-white mt-3 pb-2"
         >
           Resume
