@@ -5,6 +5,7 @@ import programmer from "../assets/programmer.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {useRef, useEffect} from 'react';
+import resume from "../assets/resume.pdf"
 export default function About(props) {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -376,13 +377,15 @@ export default function About(props) {
             Git and Github
           </li>
         </ul>
-        <a
+        {/* <a
           ref={resume}
           href="https://docs.google.com/document/d/1VbMiOwdFPDneCJ-ifykEBvzSfUK469kKcl4F0CxPsOU/edit"
           className="resume btn border-2 border-blue-400 border-solid rounded-full text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-white mt-3 pb-2"
         >
           Resume
-        </a>
+        </a> */}
+        <embed src={resume} width="500" height="375" 
+ type="application/pdf"></embed>
       </div>
     </>
   );
