@@ -1,10 +1,9 @@
 import React from "react";
-import image from "../assets/IMG_1994.jpeg";
+import image from "../assets/tom.jpg";
 import animated from "../assets/kindpng_3767359-removebg-preview.png";
 import programmer from "../assets/programmer.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {useRef, useEffect} from 'react';
 export default function About(props) {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +21,7 @@ export default function About(props) {
             Hi I'm Tomiwa, Nice to meet you.
           </h3>
           <p
-            className="paragraph-2 font-poppins tracking-wide md:text-lg mt-4  md:text-start md:px-6 lg:px-10 xl:px-20"
+            className="font-poppins text-center tracking-wide md:text-lg mt-4  md:text-start md:px-6 lg:px-10 xl:px-20"
             
           >
             As a self-taught front-end developer, I have worked on web
@@ -31,7 +30,6 @@ export default function About(props) {
             experience. I am highly motivated and eager to learn.
           </p>
         </div>
-        <img src={image} className="image-2" alt="my-image" />
       </section>
       <img src={animated} className="image-3 lg:block" alt="animated-bot" />
       <div className="skillset-div font-poppins text-center ml-auto mr-auto rounded-md shadow flex flex-col items-center p-12 bg-white">
@@ -70,17 +68,23 @@ export default function About(props) {
           <li className="react">
             React
           </li>
+            <li className="react">
+            TYPESCRIPT
+          </li>
+            <li className="react">
+            Zustand
+          </li>
           <li  className="redux">
             Redux
           </li>
           <li  className="tailwind">
             Tailwind
           </li>
-          <li  className="bootstrap">
-            Bootstrap
-          </li>
           <li className="git">
             Git and Github
+          </li>
+           <li className="git">
+            Trello
           </li>
         </ul>
         {/* <a
